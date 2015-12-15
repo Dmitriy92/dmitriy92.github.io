@@ -2,13 +2,13 @@ $(window).load(function() {
     $("#flexiselDemo1").flexisel();
 
 
-    //при нажатии на элемент списка - список не пропадает
+    //пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     $('.take-right, .take-left, .input-group-btn').on('click', '.dropdown-menu > li > button > .logo-web, .dropdown-menu > li > button > .logo-mastercard', function(e) {
         e.preventDefault();
         e.stopPropagation();
     });
 
-    //при наведении или нажатии срабатывает выпадающая таблица
+    //пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     $(function () {
         $('[data-toggle="popover"]').popover({
             html:'true',
@@ -30,7 +30,7 @@ $(window).load(function() {
 
 
 
-    // кнопка поменять местами меняет картинки и значения
+    // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     $('.button-swap').click(function(){
         // get values
         var form_left = $('.form-left').attr('src');
@@ -138,6 +138,27 @@ $(window).load(function() {
         var formtemp = $(this).attr('src');
         $('.form-img2').attr('src', formtemp);
         $('.form-right').attr('src', formtemp);
+    });
+
+    $('.focusus').click(function(){
+        //$(this).css('display','block');
+        alert('DA');
+    });
+
+
+    // РїСЂРё РЅР°РІРµРґРµРЅРёРё РЅР° СЃС‚СЂРµР»РѕС‡РєРё Р»РѕРіРѕС‚РёРїРѕРІ Р±Р°РЅРєР°
+    $('.nbs-flexisel-nav-left').hover(function(){
+        $('.nav-clients-left').css('color','#000000');
+    }).mouseout(function(){
+        $('.nav-clients-left').css('color','#808080');
+    });
+    $('.nbs-flexisel-nav-right').hover(function(){
+        $('.nav-clients-right').css('color','#000000');
+    }).mouseout(function(){
+        $('.nav-clients-right').css('color','#808080');
+    });
+    $('body').on('click', '.focusus', function(){
+        alert('DA');
     });
 
 });

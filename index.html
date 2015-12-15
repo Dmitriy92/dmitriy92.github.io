@@ -47,8 +47,8 @@
 </nav>
 <div class="container header-logo">
     <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-6 text-left">
-            <h1 class="logo-img">LOGO</h1>
+        <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+            <img src="img/logo.png">
         </div>
         <div class="col-lg-3 col-lg-push-6  col-md-3 col-md-push-6 col-sm-6 text-right">
             <h5 class="enter-social">Войти под аккаунтом соцсетей</h5>
@@ -112,8 +112,8 @@
                             </button>
                         </li>
                         <li>
-                            <button data-container="body" data-trigger="hover focus" data-toggle="popover" data-placement="top" data-contentwrapper="#privat-min-max">
-                                <img class="logo-privat" src="img/logo-privat.png">
+                            <button data-container="body" data-trigger="hover focus" data-toggle="popover" data-placement="top" data-contentwrapper="#web-min-max">
+                                <img class="logo-web" src="img/logo-web.png">
                             </button>
                         </li>
                         <li>
@@ -122,8 +122,8 @@
                             </button>
                         </li>
                         <li>
-                            <button data-container="body" data-trigger="hover focus" data-toggle="popover" data-placement="top" data-contentwrapper="#web-min-max">
-                                <img class="logo-web" src="img/logo-web.png">
+                            <button data-container="body" data-trigger="hover focus click" data-toggle="popover" data-placement="top" data-contentwrapper="#privat-min-max">
+                                <img class="logo-privat" src="img/logo-privat.png">
                             </button>
                         </li>
                         <li>
@@ -159,8 +159,8 @@
                                         </button>
                                     </li>
                                     <li>
-                                        <button data-container="body" data-trigger="hover focus" data-toggle="popover" data-placement="top" data-contentwrapper="#privat-min-max">
-                                            <img class="logo-privat" src="img/logo-privat.png">
+                                        <button data-container="body" data-trigger="hover focus" data-toggle="popover" data-placement="top" data-contentwrapper="#web-min-max">
+                                            <img class="logo-web" src="img/logo-web.png">
                                         </button>
                                     </li>
                                     <li>
@@ -169,8 +169,8 @@
                                         </button>
                                     </li>
                                     <li>
-                                        <button data-container="body" data-trigger="hover focus" data-toggle="popover" data-placement="top" data-contentwrapper="#web-min-max">
-                                            <img class="logo-web" src="img/logo-web.png">
+                                        <button data-container="body" data-trigger="hover focus click" data-toggle="popover" data-placement="top" data-contentwrapper="#privat-min-max">
+                                            <img class="logo-privat" src="img/logo-privat.png">
                                         </button>
                                     </li>
                                     <li>
@@ -208,8 +208,8 @@
                                         </button>
                                     </li>
                                     <li>
-                                        <button data-container="body" data-trigger="hover focus" data-toggle="popover" data-placement="top" data-contentwrapper="#privat-min-max">
-                                            <img class="logo-privat" src="img/logo-privat.png">
+                                        <button data-container="body" data-trigger="hover focus" data-toggle="popover" data-placement="top" data-contentwrapper="#web-min-max">
+                                            <img class="logo-web" src="img/logo-web.png">
                                         </button>
                                     </li>
                                     <li>
@@ -218,8 +218,8 @@
                                         </button>
                                     </li>
                                     <li>
-                                        <button data-container="body" data-trigger="hover focus" data-toggle="popover" data-placement="top" data-contentwrapper="#web-min-max">
-                                            <img class="logo-web" src="img/logo-web.png">
+                                        <button data-container="body" data-trigger="hover focus click" data-toggle="popover" data-placement="top" data-contentwrapper="#privat-min-max">
+                                            <img class="logo-privat" src="img/logo-privat.png">
                                         </button>
                                     </li>
                                     <li>
@@ -253,8 +253,8 @@
                             </button>
                         </li>
                         <li>
-                            <button data-container="body" data-trigger="hover focus" data-toggle="popover" data-placement="top" data-contentwrapper="#privat-min-max">
-                                <img class="logo-privat" src="img/logo-privat.png">
+                            <button data-container="body" data-trigger="hover focus" data-toggle="popover" data-placement="top" data-contentwrapper="#web-min-max">
+                                <img class="logo-web" src="img/logo-web.png">
                             </button>
                         </li>
                         <li>
@@ -263,8 +263,8 @@
                             </button>
                         </li>
                         <li>
-                            <button data-container="body" data-trigger="hover focus" data-toggle="popover" data-placement="top" data-contentwrapper="#web-min-max">
-                                <img class="logo-web" src="img/logo-web.png">
+                            <button data-container="body" data-trigger="hover focus click" data-toggle="popover" data-placement="top" data-contentwrapper="#privat-min-max">
+                                <img class="logo-privat" src="img/logo-privat.png">
                             </button>
                         </li>
                         <li>
@@ -280,163 +280,75 @@
 </div>
 
 <div id="qiwi-min-max" style="display: none;">
-    <div class="min-max">
-        <table>
-            <tbody>
-            <tr>
-                <td></td>
-                <td>Минимальный лимит</td>
-                <td>Максимальный лимит</td>
-            </tr>
-            <tr>
-                <td>
-                    <button>RUR</button>
-                </td>
-                <td>100.00 RUR</td>
-                <td>10000.00 RUR</td>
-            </tr>
-            </tbody>
-        </table>
+    <div class="min-max" data-container="body" data-trigger="hover focus" data-toggle="popover" data-placement="top" data-contentwrapper="#qiwi-min-max">
+        <p class="valuta">RUR</p>
+        <p class="max-limit">Макс. лимит</p>
+        <p class="max-limit">9000.00 RUR</p>
     </div>
 </div>
 
 <div id="sber-min-max" style="display: none;">
     <div class="min-max">
-        <table>
-            <tbody>
-            <tr>
-                <td></td>
-                <td>Минимальный лимит</td>
-                <td>Максимальный лимит</td>
-            </tr>
-            <tr>
-                <td>
-                    <button>RUB</button>
-                </td>
-                <td>200.00 RUB</td>
-                <td>15000.00 RUB</td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
-
-<div id="privat-min-max" style="display: none;">
-    <div class="min-max">
-        <table>
-            <tbody>
-            <tr>
-                <td></td>
-                <td>Минимальный лимит</td>
-                <td>Максимальный лимит</td>
-            </tr>
-            <tr>
-                <td>
-                    <button>UAH</button>
-                </td>
-                <td>100.00 UAH</td>
-                <td>10000.00 UAH</td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
-
-<div id="mastercard-min-max" style="display: none;">
-    <div class="min-max">
-        <table>
-            <tbody>
-            <tr>
-                <td></td>
-                <td>Минимальный лимит</td>
-                <td>Максимальный лимит</td>
-            </tr>
-            <tr>
-                <td>
-                    <button>UAH</button>
-                </td>
-                <td>100.00 UAH</td>
-                <td>10000.00 UAH</td>
-            </tr>
-            <tr>
-                <td>
-                    <button>RUR</button>
-                </td>
-                <td>100.00 RUR</td>
-                <td>10000.00 RUR</td>
-            </tr>
-            </tbody>
-        </table>
+        <p class="valuta">RUB</p>
+        <p class="max-limit">Макс. лимит</p>
+        <p class="max-limit">9000.00 RUB</p>
     </div>
 </div>
 
 <div id="web-min-max" style="display: none;">
     <div class="min-max">
-        <table>
-            <tbody>
-            <tr>
-                <td></td>
-                <td>Минимальный лимит</td>
-                <td>Максимальный лимит</td>
-            </tr>
-            <tr>
-                <td>
-                    <button class="button-wmz">WMZ</button>
-                </td>
-                <td>100.00 WMZ</td>
-                <td>5000.00 WMZ</td>
-            </tr>
-            <tr>
-                <td>
-                    <button class="button-wmr">WMR</button>
-                </td>
-                <td>200.00 WMR</td>
-                <td>6000.00 WMR</td>
-            </tr>
-            <tr>
-                <td>
-                    <button class="button-wmu">WMU</button>
-                </td>
-                <td>300.00 WMU</td>
-                <td>7000.00 WMU</td>
-            </tr>
-            <tr>
-                <td>
-                    <button class="button-wme">WME</button>
-                </td>
-                <td>400.00 WME</td>
-                <td>8000.00 WME</td>
-            </tr>
-            <tr>
-                <td>
-                    <button class="button-wmb">WMB</button>
-                </td>
-                <td>500.00 WMB</td>
-                <td>9000.00 WMB</td>
-            </tr>
-            </tbody>
-        </table>
+        <p class="valuta">WMZ</p>
+        <p class="max-limit">Макс. лимит</p>
+        <p class="max-limit">9000.00 WMZ</p>
+    </div>
+    <div class="min-max">
+        <p class="valuta">WMR</p>
+        <p class="max-limit">Макс. лимит</p>
+        <p class="max-limit">9000.00 WMR</p>
+    </div>
+    <div class="min-max">
+        <p class="valuta">WMU</p>
+        <p class="max-limit">Макс. лимит</p>
+        <p class="max-limit">9000.00 WMU</p>
+    </div>
+    <div class="min-max">
+        <p class="valuta">WME</p>
+        <p class="max-limit">Макс. лимит</p>
+        <p class="max-limit">9000.00 WME</p>
+    </div>
+    <div class="min-max">
+        <p class="valuta">WMB</p>
+        <p class="max-limit">Макс. лимит</p>
+        <p class="max-limit">9000.00 WMB</p>
+    </div>
+</div>
+
+<div id="mastercard-min-max" style="display: none;">
+    <div class="min-max">
+        <p class="valuta">UAH</p>
+        <p class="max-limit">Макс. лимит</p>
+        <p class="max-limit">9000.00 UAH</p>
+    </div>
+    <div class="min-max">
+        <p class="valuta">RUR</p>
+        <p class="max-limit">Макс. лимит</p>
+        <p class="max-limit">9000.00 RUR</p>
+    </div>
+</div>
+
+<div id="privat-min-max" style="display: none;">
+    <div class="min-max">
+        <p class="valuta">UAH</p>
+        <p class="max-limit">Макс. лимит</p>
+        <p class="max-limit">9000.00 UAH</p>
     </div>
 </div>
 
 <div id="yandex-min-max" style="display: none;">
     <div class="min-max">
-        <table>
-            <tbody>
-            <tr>
-                <td></td>
-                <td>Минимальный лимит</td>
-                <td>Максимальный лимит</td>
-            </tr>
-            <tr>
-                <td>
-                    <button>RUR</button>
-                </td>
-                <td>150.00 RUR</td>
-                <td>12000.00 RUR</td>
-            </tr>
-            </tbody>
-        </table>
+        <p class="valuta">RUR</p>
+        <p class="max-limit">Макс. лимит</p>
+        <p class="max-limit">9000.00 RUR</p>
     </div>
 </div>
 <div class="container">
@@ -479,20 +391,20 @@
     <span class="glyphicon glyphicon-chevron-right nav-clients-right" aria-hidden="true"></span>
 
     <ul id="flexiselDemo1">
-        <li><img src="/img/logo-qiwi.png" height="58" width="62"></li>
-		<li><img src="/img/logo-sber.png" height="58" width="62"></li>
-		<li><img src="/img/logo-privat.png" height="58" width="62"></li>
-		<li><img src="/img/logo-mastercard.png" height="58" width="62"></li>
-		<li><img src="/img/logo-web.png" height="58" width="62"></li>
-		<li><img src="/img/logo-yandex.png" height="58" width="62"></li>
-		<li><img src="/img/logo-cash.png" height="58" width="62"></li>
+        <li><img src="img/logo-qiwi.png" height="58" width="62"></li>
+        <li><img src="img/logo-sber.png" height="58" width="62"></li>
+        <li><img src="img/logo-privat.png" height="58" width="62"></li>
+        <li><img src="img/logo-mastercard.png" height="58" width="62"></li>
+        <li><img src="img/logo-web.png" height="58" width="62"></li>
+        <li><img src="img/logo-yandex.png" height="58" width="62"></li>
+        <li><img src="img/logo-cash.png" height="58" width="62"></li>
     </ul>
 </div>
 <div class="container-fluid container-bottom">
     <div class="container">
         <div class="row">
-            <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-3 hidden-xs text-left bottom-logo">
-                <h1>LOGO</h1>
+            <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs text-left bottom-logo text-left">
+                <img class="logo-mini" src="img/logo-mini.png">
                 <h5>© Copyright 2015</h5>
             </div>
             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 text-left bottom-help">

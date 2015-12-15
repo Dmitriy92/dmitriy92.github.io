@@ -73,11 +73,11 @@
 }
 .change-arrow-right{
     float: left;
-    margin: 32px 80px 0 10px;
+    margin: 32px 55px 0 35px;
 }
 .change-arrow-left{
     float: right;
-    margin: 32px 10px;
+    margin: 32px 35px;
 }
 .change > div > div > div > .change-get{
     text-align: right;
@@ -89,6 +89,9 @@
     padding-top: 24px;
     padding-left: 47px;
     margin-bottom: 10px;
+}
+.popover{
+    max-width: 100%; /* Max Width of the popover (depending on the container!) */
 }
 .change-second-paragraph{
     font-size: 16px;
@@ -231,6 +234,37 @@ button {outline:none;}
     border-radius: 25px;
     margin-top: 10px;
 }
+.popover-content{
+    padding: 0;
+}
+.popover-content > div:last-child{
+    margin-right: 5px;
+}
+.min-max{
+    float: left;
+    cursor: pointer;
+    background-color: #6699CA;
+    margin: 5px 0 5px 5px;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+.min-max:hover{
+    background-color: #609574;
+}
+.valuta{
+    font-family: OpenSansRegular, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin: 0;
+    text-align: center;
+}
+.max-limit{
+    font-family: OpenSansRegular, sans-serif;
+    font-size: 13px;
+    margin: 0;
+    color: #FFFFFF;
+}
 .banners{
     font-family: OpenSansRegular, sans-serif;
     color: #FFFFFF;
@@ -315,12 +349,19 @@ button {outline:none;}
 .partners{
     margin-bottom: 50px;
 }
+.nav-clients-left, .nav-clients-right{
+    color: #808080;
+}
+/*.nbs-flexisel-nav-right:hover .nav-clients-right, .nav-clients-right:hover{*/
+    /*color: #000000;*/
+/*}*/
 .container-bottom{
     background-color: #6699CC;
     padding-top: 15px;
     padding-bottom: 15px;
 }
 .bottom-logo > h1, .bottom-logo > h5{
+    margin-top: 40px;
     color: #FFFFFF;
 }
 .bottom-course, .bottom-help{
@@ -330,13 +371,17 @@ button {outline:none;}
     color: #FFFFFF;
 }
 .container-bottom > div > div > div > p{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+.logo-mini{
+    margin-top: 19px;
 }
 .bottom-social{
     background-color: #336699;
 }
 .bottom-social > div > div{
     margin-top: 3px;
+    padding-left: 0;
 }
 .bottom-social > div > div > img{
     float: left;
