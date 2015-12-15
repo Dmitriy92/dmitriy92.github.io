@@ -1,0 +1,424 @@
+.navbar-default{
+    background-color: #F1F8FC;
+}
+.navbar{
+    min-height: 34px;
+}
+.navbar-collapse > .navbar-nav > li > a {
+    color: #00699E;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.navbar-collapse > .navbar-nav > li > a:hover {
+    color: #00517A;
+}
+.navbar-collapse > .navbar-nav > .register > a{
+    border-left: 1px solid blue;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 7px;
+}
+
+.header-logo{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.logo-img{
+    color: #00669C;
+    font-weight: bold;
+}
+.enter-social{
+    margin-top: 0;
+}
+.nav-justified > li > a{
+    color: #000000;
+    background: #fcfcfc -moz-linear-gradient(top, #fcfcfc 0%, #eee 100%); /* FF3.6+ */
+    background: #fcfcfc -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(100%,#eee)); /* Chrome,Safari4+ */
+    background: #fcfcfc -webkit-linear-gradient(top, #fcfcfc 0%, #eee 100%); /* Chrome10+,Safari5.1+ */
+    background: #fcfcfc -o-linear-gradient(top, #fcfcfc 0%, #eee 100%); /* Opera11.10+ */
+    background: #fcfcfc -ms-linear-gradient(top, #fcfcfc 0%, #eee 100%); /* IE10+ */
+    background: #fcfcfc linear-gradient(top, #fcfcfc 0%, #eee 100%); /* W3C */
+    -webkit-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.2);
+}
+.nav-justified > li > a:hover{
+    background: #EFEFEF;
+    border-bottom: 2px solid #68A7DC;
+}
+.nav-justified > li > .active{
+    background: #EFEFEF;
+    border-bottom: 2px solid #68A7DC;
+}
+.change{
+    background-color: #F0F2F5;
+    margin-top: 70px;
+    padding: 35px 0;
+    color: #FFFFFF;
+}
+.change-inline{
+    width: 100%;
+    height: 370px;
+    background: #609573 -moz-linear-gradient(top, #609573 0%, #6699CB 100%); /* FF3.6+ */
+    background: #609573 -webkit-gradient(linear, left top, left bottom, color-stop(0%,#609573), color-stop(100%,#6699CB)); /* Chrome,Safari4+ */
+    background: #609573 -webkit-linear-gradient(top, #609573 0%, #6699CB 100%); /* Chrome10+,Safari5.1+ */
+    background: #609573 -o-linear-gradient(top, #609573 0%, #6699CB 100%); /* Opera11.10+ */
+    background: #609573 -ms-linear-gradient(top, #609573 0%, #6699CB 100%); /* IE10+ */
+    background: #609573 linear-gradient(top, #609573 0%, #6699CB 100%); /* W3C */
+    border-radius: 5px;
+}
+.change > div > div > div > p{
+    color: #666666;
+    margin: 83px 25px 5px 35px;
+}
+.change-arrow-right{
+    float: left;
+    margin: 32px 80px 0 10px;
+}
+.change-arrow-left{
+    float: right;
+    margin: 32px 10px;
+}
+.change > div > div > div > .change-get{
+    text-align: right;
+    margin: 83px 35px 5px 25px;
+}
+.change-first-paragraph{
+    font-size: 18px;
+    font-family: OpenSansBold, sans-serif;
+    padding-top: 24px;
+    padding-left: 47px;
+    margin-bottom: 10px;
+}
+.change-second-paragraph{
+    font-size: 16px;
+    float: right;
+    margin-top: 22px;
+    margin-bottom: 10px;
+    margin-right: 14px;
+}
+.change-inline > .change-input{
+    /*zoom: 2;*/
+    margin: 30px 50px 0px 0px;
+    float: right;
+    transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+    background: #FFFFFF;
+    color: #FFFFFF;
+    border: none;
+}
+.form1, .form2{
+    text-align: center;
+    color: #000000;
+}
+.form1 > input, .form2 > input{
+    padding-left: 10px;
+    height: 50px;
+    width: 315px;
+    font-size: 18px;
+}
+.form1 > select, .form2 > select{
+    padding: 5px 0px 5px 15px;
+    height: 50px;
+    margin-left: -5px;
+}
+.form11{
+    text-align: center;
+    color: #000000;
+}
+.change-group{
+    width: 70%;
+    left: 15%;
+}
+.form-input{
+    font-size: 18px;
+}
+.form-logos1 > li, .form-logos2 > li{
+    margin: 14px auto;
+    float: left;
+}
+input {outline:none;}
+button {outline:none;}
+.change-group > div > .form-logos1 > li > a,
+.change-group > div > .form-logos2 > li > a,
+.take-left > .form-logos1 > li > a,
+.take-right > .form-logos2 > li > a{
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.change-group > div > .form-logos1 > li > button,
+.change-group > div > .form-logos2 > li > button,
+.take-left > .form-logos1 > li > button,
+.take-right > .form-logos2 > li > button {
+    background-color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding: 3px 20px;
+}
+.change-group > div > .form-logos1, .change-group > div > .form-logos2{
+    width: 550px;
+    right: -210px;
+}
+.form-logos1, .form-logos2{
+    width: 550px;
+}
+.take-left > .form-logos1{
+    left: 0 !important;
+}
+.take-left{
+    float: left;
+}
+.form-left, .form-right{
+    cursor: pointer;
+    height: 100px !important;
+    padding: 25px;
+    margin: 10px;
+    background: #fcfcfc -moz-linear-gradient(top, #fcfcfc 0%, #eee 100%); /* FF3.6+ */
+    background: #fcfcfc -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(100%,#eee)); /* Chrome,Safari4+ */
+    background: #fcfcfc -webkit-linear-gradient(top, #fcfcfc 0%, #eee 100%); /* Chrome10+,Safari5.1+ */
+    background: #fcfcfc -o-linear-gradient(top, #fcfcfc 0%, #eee 100%); /* Opera11.10+ */
+    background: #fcfcfc -ms-linear-gradient(top, #fcfcfc 0%, #eee 100%); /* IE10+ */
+    background: #fcfcfc linear-gradient(top, #fcfcfc 0%, #eee 100%); /* W3C */
+    -webkit-box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.2);
+    border-radius: 5px !important;
+}
+.change-group > div > button{
+    width: 120px;
+}
+.form-input{
+    height: 50px;
+}
+.form-button{
+    height: 50px;
+}
+.change-refresh{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: -10px;
+}
+.button-swap{
+    cursor: pointer;
+}
+.change-refresh > span > .fa-circle{
+    color: #FFF798;
+}
+.change-refresh > span >.fa-refresh{
+    color: #517C99;
+}
+.change-third-paragraph{
+    font-size: 18px;
+    font-family: OpenSansBold, sans-serif;
+    padding-left: 47px;
+    margin-bottom: 10px;
+}
+.form2 > select{
+    background-color: #EBEBE4;
+}
+.change-button{
+    text-align: center;
+    font-family: OpenSansBold, sans-serif;
+    font-size: 18px;
+    color: #497499;
+    background-color: #FFF798;
+    padding: 5px 42px;
+    border: none;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+.banners{
+    font-family: OpenSansRegular, sans-serif;
+    color: #FFFFFF;
+    height: 180px;
+    font-size: 12px;
+    padding: 10px 15px 0px 25px;
+    margin: 60px auto 0 auto;}
+.banner-1{
+    height: 180px;
+    width: 290px;
+    background: url(../img/blue-back-left.png) no-repeat center center;
+}
+.banner-1 > h4{
+    font-family: OpenSansBold, sans-serif;
+}
+.banner-1 > p{
+    font-size: 15px;
+    padding-top: 8px;
+    padding-right: 20px;
+}
+.banner-1 > a{
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+.banner-2{
+    height: 180px;
+    width: 290px;
+    background: url(../img/green-back.png) no-repeat center center;
+}
+.banner-2 > h4{
+    font-family: OpenSansBold, sans-serif;
+}
+.banner-2 > p{
+    font-size: 15px;
+    padding-top: 10px;
+}
+.banner-3{
+    height: 180px;
+    width: 290px;
+    background: url(../img/blue-back-right.png) no-repeat center center;
+}
+.banner-3 > button{
+    float: right;
+    color: #3F6F9F;
+    background-color: #DEEDF9;
+    padding: 5px 10px;
+    border: 1px solid #7DB0DB;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.banner-3 > .ban3-first-link{
+    color: #FFFFFF;
+    font-size: 21px;
+    text-decoration: underline;
+    display: block;
+    padding-top: 7px;
+}
+.banner-3 > .ban3-first-paragraph{
+    font-style: italic;
+    margin-bottom: 8px;
+}
+.banner-3 > .ban3-second-paragraph{
+    font-style: italic;
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+.banner-3 > .ban3-second-link{
+    float: left;
+    color: #FFFFFF;
+    font-size: 16px;
+    text-decoration: underline;
+    padding-top: 12px;
+}
+.banner-3 > .ban3-third-paragraph{
+    float: right;
+    margin-top: 14px;
+}
+.strong-sides{
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+.partners{
+    margin-bottom: 50px;
+}
+.container-bottom{
+    background-color: #6699CC;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.bottom-logo > h1, .bottom-logo > h5{
+    color: #FFFFFF;
+}
+.bottom-course, .bottom-help{
+    padding-left: 40px;
+}
+.container-bottom > div > div > div > p > a{
+    color: #FFFFFF;
+}
+.container-bottom > div > div > div > p{
+    margin-bottom: 10px;
+}
+.bottom-social{
+    background-color: #336699;
+}
+.bottom-social > div > div{
+    margin-top: 3px;
+}
+.bottom-social > div > div > img{
+    float: left;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.bottom-social > div > div > p{
+    color: #FFFFFF;
+    padding-top: 7px;
+    margin-bottom: 11px;
+}
+.bottom-social > div > div > a:hover, .header-logo > div > div > a{
+    text-decoration: none;
+}
+.bottom-img > p{
+    margin-top: 20px;
+}
+.we-in-social{
+    float: left;
+    margin-right: 10px;
+}
+.fa-square{
+    color: #36A8DF;
+}
+.fa-stack:hover .fa-square{
+    color: #FFFFFF;
+}
+.fa-vk, .fa-facebook, .fa-circle-o, .fa-google-plus{
+    color: #FFFFFF;
+}
+.fa-stack:hover .fa-vk, .fa-stack:hover .fa-facebook, .fa-stack:hover .fa-circle-o, .fa-stack:hover .fa-google-plus{
+    color: #36A8DF;
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .change-arrow-right {
+        margin: 32px 30px 0 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .change-group {
+        width: 90%;
+        left: 5%;
+    }
+    .change-group > div > .form-logos1, .change-group > div > .form-logos2{
+        width: 280px;
+        right: 0;
+    }
+}
+
+@media (max-width: 390px) {
+    .change-inline {
+        height: 425px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
