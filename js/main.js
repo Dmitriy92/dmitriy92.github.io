@@ -2,13 +2,12 @@ $(window).load(function() {
     $("#flexiselDemo1").flexisel();
 
 
-    //��� ������� �� ������� ������ - ������ �� ���������
+    //static dropdown on click
     $('.take-right, .take-left, .input-group-btn').on('click', '.dropdown-menu > li > button > .logo-web, .dropdown-menu > li > button > .logo-mastercard', function(e) {
         e.preventDefault();
         e.stopPropagation();
     });
 
-    //��� ��������� ��� ������� ����������� ���������� �������
     $(function () {
         $('[data-toggle="popover"]').popover({
             html:'true',
@@ -30,7 +29,7 @@ $(window).load(function() {
 
 
 
-    // ������ �������� ������� ������ �������� � ��������
+    // changes for images and values
     $('.button-swap').click(function(){
         // get values
         var form_left = $('.form-left').attr('src');
@@ -140,13 +139,9 @@ $(window).load(function() {
         $('.form-right').attr('src', formtemp);
     });
 
-    $('.focusus').click(function(){
-        //$(this).css('display','block');
-        alert('DA');
-    });
 
 
-    // при наведении на стрелочки логотипов банка
+    // hover on arrows
     $('.nbs-flexisel-nav-left').hover(function(){
         $('.nav-clients-left').css('color','#000000');
     }).mouseout(function(){
@@ -157,8 +152,29 @@ $(window).load(function() {
     }).mouseout(function(){
         $('.nav-clients-right').css('color','#808080');
     });
-    $('body').on('click', '.focusus', function(){
-        alert('DA');
+    $('.change-page').on('click', '.min-max-left', function(){
+        var valuta_left = $(this).find('.valuta').text();
+        $('.valuta-top').text(valuta_left);
+    }).on('click', '.min-max-right', function(){
+        var valuta_right = $(this).find('.valuta').text();
+        $('.valuta-bottom').text(valuta_right);
     });
+
+
+    $('body').on('hover', '.popover', function(){
+        $(this).css('display','block');
+        alert('3');
+    });
+    //$('.form-logos1 li button').hover(function(){
+    //    $('.dropdown-menu li button img').click();
+    //});
+
+    //$('.form-logos2 li').hover(function(){
+    //    var id = $(this).children('button').attr('data-contentwrapper');
+    //    console.log(id);
+    //    $(this).prepend('<div class="min-max"><p class="valuta">RUR</p><p class="max-limit">Макс. лимит</p><p class="max-limit">9000.00 RUR</p></div>');
+    //});
+
+
 
 });
