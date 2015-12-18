@@ -95,36 +95,81 @@ $(window).load(function() {
         $('.form-right').attr('src', formtemp);
     });
 
-    $('.form-logos1 li button .logo-mastercard').click(function(){
-        $('.valuta-top').html('UAH');
-        var formtemp = $(this).attr('src');
-        $('.form-img1').attr('src', formtemp);
-        $('.form-left').attr('src', formtemp);
-    });
-    $('.form-logos2 li button .logo-mastercard').click(function(){
-        $('.valuta-bottom').html('UAH');
-        var formtemp = $(this).attr('src');
-        $('.form-img2').attr('src', formtemp);
-        $('.form-right').attr('src', formtemp);
-    });
+    //$('.form-logos1 li button .logo-mastercard').click(function(){
+    //    $('.valuta-top').html('UAH');
+    //    var formtemp = $(this).attr('src');
+    //    $('.form-img1').attr('src', formtemp);
+    //    $('.form-left').attr('src', formtemp);
+    //});
+    //$('.form-logos2 li button .logo-mastercard').click(function(){
+    //    $('.valuta-bottom').html('UAH');
+    //    var formtemp = $(this).attr('src');
+    //    $('.form-img2').attr('src', formtemp);
+    //    $('.form-right').attr('src', formtemp);
+    //});
+    //
+    //$('.form-logos1 li button .logo-web').click(function(){
+    //    $('.valuta-top').html('WMZ');
+    //    var formtemp = $(this).attr('src');
+    //    $('.form-img1').attr('src', formtemp);
+    //    $('.form-left').attr('src', formtemp);
+    //});
+    //$('.form-logos2 li button .logo-web').click(function(){
+    //    $('.valuta-bottom').html('WMZ');
+    //    var formtemp = $(this).attr('src');
+    //    $('.form-img2').attr('src', formtemp);
+    //    $('.form-right').attr('src', formtemp);
+    //});
 
-    $('.form-logos1 li button .logo-web').click(function(){
-        $('.valuta-top').html('WMZ');
-        var formtemp = $(this).attr('src');
-        $('.form-img1').attr('src', formtemp);
-        $('.form-left').attr('src', formtemp);
-    });
-    $('.form-logos2 li button .logo-web').click(function(){
-        $('.valuta-bottom').html('WMZ');
-        var formtemp = $(this).attr('src');
-        $('.form-img2').attr('src', formtemp);
-        $('.form-right').attr('src', formtemp);
+
+    $('.change-page').on('click', '.min-max-left', function(){
+        var valuta_left = $(this).find('.valuta').text();
+        $('.valuta-top').text(valuta_left);
+        if(valuta_left == 'WMZ' ||  valuta_left == 'WMR' ||  valuta_left == 'WMU' ||  valuta_left == 'WME' ||  valuta_left == 'WMB'){
+            $('.form-img1').attr('src', 'img/logo-web.png');
+            $('.form-left').attr('src', 'img/logo-web.png');
+        }
+        else if(valuta_left == 'UAH' ||  valuta_left == 'RUR'){
+            $('.form-img1').attr('src', 'img/logo-mastercard.png');
+            $('.form-left').attr('src', 'img/logo-mastercard.png');
+        }
+    }).on('click', '.min-max-right', function(){
+        var valuta_right = $(this).find('.valuta').text();
+        $('.valuta-bottom').text(valuta_right);
+        if(valuta_right == 'WMZ' ||  valuta_right == 'WMR' ||  valuta_right == 'WMU' ||  valuta_right == 'WME' ||  valuta_right == 'WMB'){
+            $('.form-img2').attr('src', 'img/logo-web.png');
+            $('.form-right').attr('src', 'img/logo-web.png');
+        }
+        else if(valuta_right == 'UAH' ||  valuta_right == 'RUR'){
+            $('.form-img2').attr('src', 'img/logo-mastercard.png');
+            $('.form-right').attr('src', 'img/logo-mastercard.png');
+        }
+        //var master_r = document.getElementById("mastercard-min-max-right")
+        //var test = this.parentNode.parentNode.id;
+        //if(master_r == test){
+        //    alert('da');
+        //}
+        //else{
+        //    alert('net');
+        //}
+        //console.log(test);
+        //console.log(master_r);
     });
 
     //$('#web-min-max > div > table > tbody > tr > td > button').click(function(){
     //    //alert($(this).text());
     //    alert('44');
     //});
+
+
+    $('.logo-qiwi').hover(function () {
+        $('#qiwi-test').css('display','block');
+    }, function () {
+        $('#qiwi-test').fadeOut(5000);
+    });
+    $('#qiwi-test').hover(function(){
+        $(this).css('display','block');
+    });
 
     $('.form-logos1 li button .logo-yandex').click(function(){
         $('.valuta-top').html('RUR');
@@ -139,7 +184,7 @@ $(window).load(function() {
         $('.form-right').attr('src', formtemp);
     });
 
-
+    $('#web-min-max-right').popover('show');
 
     // hover on arrows
     $('.nbs-flexisel-nav-left').hover(function(){
@@ -152,19 +197,23 @@ $(window).load(function() {
     }).mouseout(function(){
         $('.nav-clients-right').css('color','#808080');
     });
-    $('.change-page').on('click', '.min-max-left', function(){
-        var valuta_left = $(this).find('.valuta').text();
-        $('.valuta-top').text(valuta_left);
-    }).on('click', '.min-max-right', function(){
-        var valuta_right = $(this).find('.valuta').text();
-        $('.valuta-bottom').text(valuta_right);
-    });
 
 
-    $('body').on('hover', '.popover', function(){
-        $(this).css('display','block');
-        alert('3');
-    });
+
+    //$('.form-logos2 li button').hover(function(){
+    //    $(this).attr('data-delay','500').change(function(){});
+    //    //    .popover({
+    //    //    delay:{
+    //    //        show:500,
+    //    //        hide: 4000
+    //    //    }
+    //    //});
+    //        //.attr('data-delay','5000').change();
+    //    console.log('33');
+    //});
+
+    //$('.form-logos2 li button').attr('data-delay','5000');
+
     //$('.form-logos1 li button').hover(function(){
     //    $('.dropdown-menu li button img').click();
     //});
