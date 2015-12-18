@@ -217,7 +217,7 @@ li > button > img{
 .change-group > div > button{
     width: 120px;
 }
-.form-right:hover{
+.form-left:hover,.form-right:hover{
     background: #fcfcfc -moz-linear-gradient(top, #EFEFEF 0%, #EDEDED 100%); /* FF3.6+ */
     background: #fcfcfc -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(100%,#EDEDED)); /* Chrome,Safari4+ */
     background: #fcfcfc -webkit-linear-gradient(top, #EFEFEF 0%, #EDEDED 100%); /* Chrome10+,Safari5.1+ */
